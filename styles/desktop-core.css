@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+.SysDesktop {
+    min-height: 100%;
+    color: #fff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+
+    background-color: black; /* tweak to show a black screen at loading*/
+    background-image: url("../MiyukiDesktop/SystemResources/default.jpg"); /* works as default */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

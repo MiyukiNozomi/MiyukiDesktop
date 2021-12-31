@@ -1,0 +1,65 @@
+/*.SysTaskBar {
+    z-index: 2500;
+    align-items: center;
+    background: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    min-height: 47px;
+    border-top: 1px solid #2A2020;
+    position: relative;
+    transition: background-color 0.3s ease-out 0s;
+}*/
+
+.SysTaskBar {
+    border-top: 1px solid #2A2020;
+    background-color: #0C0000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 46px;
+    max-height: 46px;
+    z-index: 2222;
+
+    
+    overflow: hidden;
+}
+
+.SysTaskBar div {
+    float: left;
+}
+
+.SysMenuButton {
+    background-color: #181818;
+    min-width: 68px;
+    min-height: 46px;
+    max-width: 68px;
+    max-height: 46px;
+}
+
+.SysOpenWindows {
+    height: 46px;
+    max-height: 46px;
+}
+
+.WindowIcon {
+    width: 70px;
+    height:46px;
+}
+
+.WindowIcon img {
+    width: 26px;
+    height: 26px;
+    margin-top: 10px;
+    margin-left: 22px;
+}
+/*
+.SysOpenWindows .Focused {
+    border: 2px solid #857F7F;
+    border-width: 41px;
+}
+
+.SysOpenWindows .NotFocused {
+    border: 2px solid #0f0909;
+    border-width: 5px;
+}
+*/

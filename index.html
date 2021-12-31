@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./styles/desktop-core.css">
+    <link rel="stylesheet" href="./styles/taskbar.css">
+    <link rel="stylesheet" href="./styles/startmenu.css">
+
+    <script src="MiyukiDesktop/System32/dwm.js"></script>
+
+    <script>
+        let __startMenuHandler = new StartMenu();
+    </script>
+</head>
+
+<body>
+    <div class="SysDesktop" id="@SystemUI/Desktop">
+        <div class="SysStartMenu" id="@SystemUI/Desktop/StartMenu" style="display: none">
+            <form id="@SystemUI/Desktop/StartMenu/Search" method="dialog">
+                <label id="search_icon"><img src="MiyukiDesktop/SystemResources/search.png"></label>
+                <input type="text" name="search_bar" id="search_bar" placeholder="Search">
+            </form>
+        </div>
+        <div class="SysTaskBar" id="@SystemUI/Desktop/Taskbar">
+            <div onclick="__startMenuHandler.onStartClick()" class="SysMenuButton" id="@SystemUI/Desktop/Taskbar/StartMenuButton">
+                <img src="MiyukiDesktop/SystemResources/placeholder-startmenu.png">
+            </div>
+            <div class="SysOpenWindows">
+                <div class="WindowIcon Focused" id="@SystemApps/SpaceBrowser">
+                    <img src="MiyukiDesktop/SystemApps/SpaceBrowser/icon.png">
+                </div>
+                <div class="WindowIcon NotFocused" id="@SystemApps/SpaceBrowser">
+                    <img src="MiyukiDesktop/SystemApps/SpaceBrowser/icon.png">
+                </div>
+                <div class="WindowIcon" id="@SystemApps/SpaceBrowser">
+                    <img src="MiyukiDesktop/SystemApps/SpaceBrowser/icon.png">
+                </div>
+                <div class="WindowIcon" id="@SystemApps/SpaceBrowser">
+                    <img src="MiyukiDesktop/SystemApps/SpaceBrowser/icon.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
